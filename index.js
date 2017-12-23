@@ -40,6 +40,7 @@ const fetchEosPrice = async () => {
     console.log(`当前币安的EOS/ETH价格是${EOSBINANCE}； 时间是 ${moment().format('HH:mm:ss')}`)
 
     await bithumbPage.close()
+    await binancePage.close()
 }
 
 const main = async () => {
